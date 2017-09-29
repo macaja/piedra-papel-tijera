@@ -1,0 +1,28 @@
+<div class="jumbotron">
+  <form class="" ng-submit="startToPlay()">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+                <div class="card card-block">
+                    <h3 class="text-xs-center">Datos Iniciales</h3>
+                    <hr>
+                    <fieldset>
+                        <div class="form-group has-error">
+                            <input class="form-control input-lg" ng-model="data.players.firstPlayer" placeholder="Nombre"  type="text" required>
+                        </div>
+                        <div class="form-group has-success">
+                          <input  class="form-control input-lg" ng-model="data.players.secondPlayer " placeholder="Nombre PC" type="text" required>
+                        </div>
+                        <div class="form-group has-success">
+                          <input  class="form-control input-lg" ng-model="data.numberOfRetries" placeholder="Número intentos" type="text" required>
+                        </div>
+                        <input class="btn btn-lg btn-primary btn-block" value="Start to Play!" type="submit">
+                    </fieldset>
+                </div>
+        </div>
+    </div>
+  </div>
+</form>
+<h5 ng-model="result.info"></h5>
+<h5 ng-model="result.info.winner"></h5>
+</div>
